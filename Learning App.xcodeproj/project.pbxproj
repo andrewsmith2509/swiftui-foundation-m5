@@ -12,6 +12,9 @@
 		DB2113A928720D95002EEBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2113A828720D95002EEBC5 /* Assets.xcassets */; };
 		DB2113AC28720D95002EEBC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2113AB28720D95002EEBC5 /* Preview Assets.xcassets */; };
 		DB2113B828720E96002EEBC5 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2113B728720E96002EEBC5 /* ContentModel.swift */; };
+		DB2113BE28722789002EEBC5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2113BD28722789002EEBC5 /* Models.swift */; };
+		DB2113C028723194002EEBC5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DB2113BF28723194002EEBC5 /* data.json */; };
+		DB2113C2287231BF002EEBC5 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = DB2113C1287231BF002EEBC5 /* style.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		DB2113A828720D95002EEBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2113AB28720D95002EEBC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB2113B728720E96002EEBC5 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		DB2113BD28722789002EEBC5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DB2113BF28723194002EEBC5 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../../../Downloads/iOS Foundations 2021/Module 5/Lesson 03/LearningApp/LearningApp/Resources/data.json"; sourceTree = "<group>"; };
+		DB2113C1287231BF002EEBC5 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = style.html; path = "../../../../Downloads/iOS Foundations 2021/Module 5/Lesson 03/LearningApp/LearningApp/Resources/style.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		DB2113B428720E1B002EEBC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DB2113BD28722789002EEBC5 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 		DB2113B628720E31002EEBC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DB2113BF28723194002EEBC5 /* data.json */,
+				DB2113C1287231BF002EEBC5 /* style.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2113AC28720D95002EEBC5 /* Preview Assets.xcassets in Resources */,
+				DB2113C028723194002EEBC5 /* data.json in Resources */,
+				DB2113C2287231BF002EEBC5 /* style.html in Resources */,
 				DB2113A928720D95002EEBC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +194,7 @@
 				DB2113A728720D93002EEBC5 /* HomeView.swift in Sources */,
 				DB2113B828720E96002EEBC5 /* ContentModel.swift in Sources */,
 				DB2113A528720D93002EEBC5 /* Learning_App.swift in Sources */,
+				DB2113BE28722789002EEBC5 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
