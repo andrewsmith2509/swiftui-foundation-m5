@@ -22,14 +22,28 @@ struct HomeView: View {
                 ScrollView {
                     LazyVStack(spacing: 15) {
                         ForEach(model.modules) { module in
-                            // Learning Card
-                            HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, lessons: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                            
+                            NavigationLink(destination: {
+                                ContentView()
+                                    .padding()
+                                    .onAppear {
+                                        model.beginModule(moduleId: module.id)
+                                    }
+                            }, label: { // Learning Card
+                                           HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, lessons: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                            })
+                            
+                            
+
+
+                            
                             
                             // Test Card
                             HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, lessons: "\(module.test.questions.count) Questions", time: module.test.time)
                             
                         }
                     }
+                    .tint(.black)
                     .padding()
                 }
             }
@@ -40,7 +54,7 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
             .environmentObject(ContentModel())
