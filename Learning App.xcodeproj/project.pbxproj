@@ -21,6 +21,7 @@
 		DB2113CA2874E9BB002EEBC5 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2113C92874E9BB002EEBC5 /* ContentDetailView.swift */; };
 		DB2113CD2874ED11002EEBC5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2113CC2874ED11002EEBC5 /* AVKit.framework */; };
 		DB2113CF2874F1E5002EEBC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2113CE2874F1E5002EEBC5 /* Constants.swift */; };
+		DB39FD0D28788EDF001BBE16 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DB2113C92874E9BB002EEBC5 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		DB2113CC2874ED11002EEBC5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		DB2113CE2874F1E5002EEBC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				DB2113C528736970002EEBC5 /* ContentView.swift */,
 				DB2113C7287373F2002EEBC5 /* ContentViewRow.swift */,
 				DB2113C92874E9BB002EEBC5 /* ContentDetailView.swift */,
+				DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				DB2113CA2874E9BB002EEBC5 /* ContentDetailView.swift in Sources */,
 				DB2113B828720E96002EEBC5 /* ContentModel.swift in Sources */,
 				DB2113C8287373F2002EEBC5 /* ContentViewRow.swift in Sources */,
+				DB39FD0D28788EDF001BBE16 /* CodeTextView.swift in Sources */,
 				DB2113A528720D93002EEBC5 /* Learning_App.swift in Sources */,
 				DB2113BE28722789002EEBC5 /* Models.swift in Sources */,
 				DB2113CF2874F1E5002EEBC5 /* Constants.swift in Sources */,

@@ -23,6 +23,8 @@ struct ContentDetailView: View {
                     .cornerRadius(10)
             }
             
+            CodeTextView()
+            
             if model.hasNextLesson() {
                 Button {
                     model.nextLesson()
@@ -38,16 +40,11 @@ struct ContentDetailView: View {
                             .bold()
                             .foregroundColor(.white)
                     }
-                    .padding()
                 }
             }
         }
         .padding()
+        .navigationBarTitle(lesson?.title ?? "")
     }
 }
 
-struct ContentDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentDetailView()
-    }
-}
