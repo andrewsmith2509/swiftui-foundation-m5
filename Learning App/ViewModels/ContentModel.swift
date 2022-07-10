@@ -22,6 +22,8 @@ class ContentModel: ObservableObject {
     // current lesson explanation
     @Published var lessonDescription = NSAttributedString()
     
+    @Published var currentContentSelected:Int?
+    
     var styleData: Data?
     
     init() {
