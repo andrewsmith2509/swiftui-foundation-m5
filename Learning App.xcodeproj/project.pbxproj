@@ -23,6 +23,7 @@
 		DB2113CF2874F1E5002EEBC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2113CE2874F1E5002EEBC5 /* Constants.swift */; };
 		DB39FD0D28788EDF001BBE16 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */; };
 		DB39FD2B287A53CB001BBE16 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39FD2A287A53CB001BBE16 /* RectangleCard.swift */; };
+		DB39FD4928808674001BBE16 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39FD4828808674001BBE16 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DB2113CE2874F1E5002EEBC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		DB39FD2A287A53CB001BBE16 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		DB39FD4828808674001BBE16 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DB2113C528736970002EEBC5 /* ContentView.swift */,
 				DB2113C7287373F2002EEBC5 /* ContentViewRow.swift */,
 				DB2113C92874E9BB002EEBC5 /* ContentDetailView.swift */,
+				DB39FD4828808674001BBE16 /* TestView.swift */,
 				DB39FD0C28788EDF001BBE16 /* CodeTextView.swift */,
 				DB39FD2A287A53CB001BBE16 /* RectangleCard.swift */,
 			);
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB39FD4928808674001BBE16 /* TestView.swift in Sources */,
 				DB2113A728720D93002EEBC5 /* HomeView.swift in Sources */,
 				DB2113C428734D93002EEBC5 /* HomeViewRow.swift in Sources */,
 				DB2113C628736970002EEBC5 /* ContentView.swift in Sources */,
