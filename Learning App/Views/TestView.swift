@@ -39,11 +39,15 @@ struct TestView: View {
                                             RectangleCard(color: index == selectedAnswerIndex ? Color.gray : Color.white)
                                         }
                                         else {
-                                            if (index == selectedAnswerIndex && index == model.currentQuestion!.correctIndex) || index == model.currentQuestion!.correctIndex {
+                                            if index == selectedAnswerIndex && index == model.currentQuestion!.correctIndex {
                                                 RectangleCard(color: .green)
+                                                
                                             }
                                             else if index == selectedAnswerIndex && index != model.currentQuestion!.correctIndex {
                                                 RectangleCard(color: .red)
+                                            }
+                                            else if index == model.currentQuestion!.correctIndex {
+                                                RectangleCard(color: .green)
                                             }
                                             else {
                                                 RectangleCard(color: Color.white)
@@ -62,18 +66,27 @@ struct TestView: View {
                 Spacer()
                 // button
                 Button {
-                    // Check Answer, if correct increment counter
-                    if selectedAnswerIndex == model.currentQuestion!.correctIndex {
-                        numCorrect += 1
+                    
+                    if submitted == true {
+                        selectedAnswerIndex = nil
+                        submitted = false
+                        model.nextQuestion()
+                    }
+                    else {
+                        // change submitted to true
+                        submitted = true
+                        
+                        // Check Answer, if correct increment counter
+                        if selectedAnswerIndex == model.currentQuestion!.correctIndex {
+                            numCorrect += 1
+                        }
                     }
                     
-                    // change submitted to true
-                    submitted = true
                     
                 } label: {
                     ZStack {
                         RectangleCard(color: .green)
-                        Text("Submit")
+                        Text(buttonText)
                             .bold()
                     }
                     .padding()
@@ -85,6 +98,20 @@ struct TestView: View {
         }
         else {
             ProgressView()
+        }
+    }
+    
+    var buttonText:String {
+        if submitted == true {
+            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                return "Finish"
+            }
+            else {
+                return "Next"
+            }
+        }
+        else {
+            return "Submit"
         }
     }
 }
